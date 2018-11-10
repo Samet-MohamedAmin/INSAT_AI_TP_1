@@ -74,7 +74,6 @@ class Handler:
 
         dialog.destroy()
 
-
         print('quit')
         Gtk.main_quit()
 
@@ -87,7 +86,7 @@ if __name__ == "__main__":
     handler = Handler(builder)
     builder.connect_signals(handler)
 
-
     assistance_window.show_all()
+
 
     Gtk.main()

@@ -69,7 +69,6 @@
       </object>
       <packing>
         <property name="page_type">progress</property>
-        <property name="complete">True</property>
         <property name="has_padding">False</property>
       </packing>
     </child>
@@ -121,7 +120,6 @@
         </child>
       </object>
       <packing>
-        <property name="complete">True</property>
         <property name="has_padding">False</property>
       </packing>
     </child>
@@ -219,6 +217,7 @@
             <property name="can_focus">True</property>
             <property name="valign">center</property>
             <property name="editable">False</property>
+            <property name="width_chars">20</property>
           </object>
           <packing>
             <property name="left_attach">1</property>
