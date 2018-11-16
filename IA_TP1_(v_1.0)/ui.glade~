@@ -12,7 +12,9 @@
       <object class="GtkLabel" id="how_work">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="label" translatable="yes">How this thing work?</property>
+        <property name="label" translatable="yes">Veuillez insérer la base des faits et la base des règles
+sous forme d'un fichier JSON.
+Puis, vous pouvez ajouter un but à chercher.</property>
       </object>
       <packing>
         <property name="page_type">intro</property>

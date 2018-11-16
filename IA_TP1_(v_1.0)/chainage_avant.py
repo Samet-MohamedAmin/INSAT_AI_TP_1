@@ -2,7 +2,6 @@ from unification.expression import Expression
 from unification.display import *
 
 
-## Declaration des Classes Regle et Fait 
 class Regle:
     def __init__(self, id=0, premisse=[], conclusion=[], etat=True):
         self.premisse = premisse
@@ -17,7 +16,6 @@ class Fait:
         self.name = name
 
 
-# retourner true si l'instance n'est pas dans la base des faits
 def conclusion_not_exist(instance, BF):
     for x in BF:
         if x.name == instance:
@@ -25,7 +23,6 @@ def conclusion_not_exist(instance, BF):
     return True
 
 
-# retourner la conclusion apres l'unification
 def conclure(unification, conclusion):
     for key, value in unification:
         conclusion = conclusion.replace(key, value)
@@ -51,7 +48,6 @@ def ajout_conclusion(conclusion, unification, base_faits, bf_new, but=""):
             return True
 
 
-# Chainage Avant avec but Sans Conflit (moteur d'ordre 1)
 def chainage_avant_sans_conflit(base_faits, base_regles, but=""):
     if test_but(base_faits, but): return True
     while True:
@@ -66,3 +62,6 @@ def chainage_avant_sans_conflit(base_faits, base_regles, but=""):
         if not bf_new:
             return False
     return False
+
+if __name__ == "__main__":
+    pass

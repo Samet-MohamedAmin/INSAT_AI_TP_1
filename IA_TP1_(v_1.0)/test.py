@@ -33,3 +33,7 @@ class Test():
             with open(self.bf_new_file, 'w') as bf_file:
                 json.dump(bf_data_new, bf_file)
             return 'you can find the new bf in: %s' %self.bf_new_file
+
+
+if __name__ == "__main__":
+    print(Test().do_test())

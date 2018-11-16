@@ -80,7 +80,7 @@ class Handler:
 
 if __name__ == "__main__":
     builder = Gtk.Builder()
-    builder.add_from_file('ui.glade')
+    builder.add_from_file('ui/ui.glade')
     assistance_window = builder.get_object('assistance_window')
 
     handler = Handler(builder)

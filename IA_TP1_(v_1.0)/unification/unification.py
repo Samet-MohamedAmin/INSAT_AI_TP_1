@@ -11,7 +11,7 @@ def unifier_atom(expr1:Expression,expr2:Expression):
     if(expr2.isVariable()):
         expr1,expr2 = expr2,expr1
 
-    if(expr1.isVariable()):#1 seul element + contains "?"
+    if(expr1.isVariable()):
         if(expr1 in expr2):
             return None
         if (expr2.isAtom()):
